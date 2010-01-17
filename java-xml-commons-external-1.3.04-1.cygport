@@ -1,0 +1,10 @@
+inherit ant
+
+DESCRIPTION="Java libraries providing XML standards (DOM, SAX, JAXP)"
+HOMEPAGE="http://xml.apache.org/commons/"
+#SRC_URI="mirror://apache/xml/commons/${ORIG_PN}-${PV}-src.tar.gz"
+SRC_URI="mirror://gentoo/${P#java-}.tar.bz2"
+
+ANT_INSTALL_JARS="build/xml-*.jar"
+ANT_INSTALL_JAVADOC="build/docs/javadoc"
+DOCS="LICENSE* NOTICE README*"

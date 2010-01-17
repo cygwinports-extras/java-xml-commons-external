@@ -1,0 +1,6 @@
+category: Java
+sdesc: "Java XML standards (DOM, SAX, JAXP) library"
+ldesc: "xml-commons primary goal is to provide Apache projects with a 
+stable version of XML-related externally-defined standards-based code. 
+This is mainly the various interfaces that you use when programming XML 
+from JAVA: DOM, SAX and JAXP for now."
