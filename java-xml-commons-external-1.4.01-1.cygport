@@ -1,10 +1,13 @@
-inherit ant
+SVN_URI="http://svn.apache.org/repos/asf/xml/commons"
+SVN_TAG="xml-commons-external-${PV//./_}/java/external"
+SVN_MODULE=${PN#java-}
+inherit ant svn
 
 DESCRIPTION="Java libraries providing XML standards (DOM, SAX, JAXP)"
 HOMEPAGE="http://xml.apache.org/commons/"
 #SRC_URI="mirror://apache/xml/commons/${ORIG_PN}-${PV}-src.tar.gz"
-SRC_URI="mirror://gentoo/${P#java-}.tar.bz2"
 
+ANT_BUILD_TARGETS="jar javadoc"
 ANT_INSTALL_JARS="build/xml-*.jar"
 ANT_INSTALL_JAVADOC="build/docs/javadoc"
 DOCS="LICENSE* NOTICE README*"
